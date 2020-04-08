@@ -1,0 +1,19 @@
+git branch b1
+修改某个文件
+git add .
+git commit -m '冲突演示'
+git status
+git checkout b1
+
+再次修改那个文件（同一行）
+git add .
+git commit -m '冲突演示'
+ git status
+ git checkout master
+ git merge b1
+
+查看被修改的文件，解决冲突
+git add .
+git commit -m '冲突演示'
+都解决后进行push操作
+git push origin master:master
